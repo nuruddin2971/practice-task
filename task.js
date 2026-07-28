@@ -293,3 +293,22 @@
 
 // console.log(listKeys({ name: "Sam", age: 25, city: "Dhaka" }));
 // // Expected: ["name", "age", "city"]
+
+// Task-8-B
+
+// Input: an object, a key (string), a default value
+// Output: the value at that key, or the default
+// Returns: any value
+
+// function getValueOrDefault(obj, key, defaultValue) {
+//   // TODO: check if the key exists in the object
+//   if (Object.hasOwn(obj, key)) {
+//     return obj[key];
+//   } else {
+//     return defaultValue;
+//   }
+// }
+
+// let person = { name: "Sam", age: 25 };
+// console.log(getValueOrDefault(person, "age", 0)); // Expected: 25
+// console.log(getValueOrDefault(person, "grade", "N/A")); // Expected: "N/A"
