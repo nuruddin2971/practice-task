@@ -260,14 +260,36 @@
 // Output: array with only even numbers
 // Returns: an array
 
-function keepEvenNumbers(numbers) {
-  let result = [];
-  // TODO: loop and push only even numbers
-  for (let i = 0; i < numbers.length; i++) {
-    console.log(numbers[i])
-  }
+// function keepEvenNumbers(numbers) {
+//   let result = [];
+//   // TODO: loop and push only even numbers
+//   for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 2 === 0) {
+//       result.push(numbers[i]);
+//     }
+//   }
 
-  return result;
-}
+//   return result;
+// }
 
-console.log(keepEvenNumbers([3, -5, 8, -1, 0])); // Expected: [8, 0]
+// console.log(keepEvenNumbers([3, -5, 8, -1, 0])); // Expected: [8, 0]
+
+// Task-8-A
+
+// Input: an object
+// Output: array of the object's keys
+// Returns: an array
+
+// function listKeys(obj) {
+//   let keys = [];
+//   //   TODO: loop through the object and collect its keys
+//     for (let key in obj) {
+//       keys.push(key);
+//     }
+
+//   //  let keys = Object.keys(obj);
+//   return keys;
+// }
+
+// console.log(listKeys({ name: "Sam", age: 25, city: "Dhaka" }));
+// // Expected: ["name", "age", "city"]
