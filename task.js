@@ -193,6 +193,25 @@
 
 //   return secondSmallest;
 // }
+// function findSecondSmallest(numbers) {
+//   let smallest = Infinity;
+//   let secondSmallest = Infinity;
+//   for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] < smallest) {
+//       secondSmallest = smallest;
+//       smallest = numbers[i];
+//     } else if (numbers[i] > smallest && numbers[i] < secondSmallest) {
+//       secondSmallest = numbers[i];
+//     }
+//   }
+//   //   for (let num of numbers) {
+//   //     if (num < smallest) {
+//   //       secondSmallest = smallest;
+//   //       smallest = num;
+//   //     }
+//   //   }
+//   return secondSmallest;
+// }
 
 // console.log(findSecondSmallest([10, 5, 8, 20, 15])); // Expected: 8
 
@@ -216,21 +235,39 @@
 
 // console.log(countMultiplesOfThree([3, 4, 6, 7, 9, 10])); // Expected: 3
 
-// Task-7-B
+// Task-7-A
 
 // Input: an array of numbers
 // Output: the average of all numbers
 // Returns: a number
 
-function averageOfArray(numbers) {
-  let total = 0;
-  // TODO: loop through, sum the numbers, then divide by the count
-  for (let i = 0; i < numbers.length; i++) {
-    total += numbers[i];
-  }
-  total /= numbers.length;
+// function averageOfArray(numbers) {
+//   let total = 0;
+//   // TODO: loop through, sum the numbers, then divide by the count
+//   for (let i = 0; i < numbers.length; i++) {
+//     total += numbers[i];
+//   }
+//   total /= numbers.length;
 
-  return total;
+//   return total;
+// }
+
+// console.log(averageOfArray([2, 4, 6])); // Expected: 4
+
+// Task-7-B
+
+// Input: an array of numbers
+// Output: array with only even numbers
+// Returns: an array
+
+function keepEvenNumbers(numbers) {
+  let result = [];
+  // TODO: loop and push only even numbers
+  for (let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i])
+  }
+
+  return result;
 }
 
-console.log(averageOfArray([2, 4, 6])); // Expected: 4
+console.log(keepEvenNumbers([3, -5, 8, -1, 0])); // Expected: [8, 0]
