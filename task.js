@@ -179,14 +179,58 @@
 // Input: an array of numbers
 // Output: the second smallest number
 // Returns: a number
- 
-function findSecondSmallest(numbers) {
-  let smallest = Infinity;
-  let secondSmallest = Infinity;
-  // TODO: loop through and update smallest/secondSmallest correctly
- 
-  return secondSmallest;
-}
- 
-console.log(findSecondSmallest([10, 5, 8, 20, 15])); // Expected: 8
 
+// function findSecondSmallest(numbers) {
+//   let smallest = Infinity;
+//   let secondSmallest = Infinity;
+//   // TODO: loop through and update smallest/secondSmallest correctly
+//   for (let i = 0; i < numbers.length; i++) {
+//     let currentElement = numbers[i];
+//     if (smallest < secondSmallest) {
+//         secondSmallest = currentElement
+//     }
+//   }
+
+//   return secondSmallest;
+// }
+
+// console.log(findSecondSmallest([10, 5, 8, 20, 15])); // Expected: 8
+
+// Task-6-B
+
+// Input: an array of numbers
+// Output: how many numbers are divisible by 3
+// Returns: a number
+
+// function countMultiplesOfThree(numbers) {
+//   let count = 0;
+//   // TODO: loop through and count multiples of 3
+//   for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 3 === 0) {
+//       count++;
+//     }
+//   }
+
+//   return count;
+// }
+
+// console.log(countMultiplesOfThree([3, 4, 6, 7, 9, 10])); // Expected: 3
+
+// Task-7-B
+
+// Input: an array of numbers
+// Output: the average of all numbers
+// Returns: a number
+
+function averageOfArray(numbers) {
+  let total = 0;
+  // TODO: loop through, sum the numbers, then divide by the count
+  for (let i = 0; i < numbers.length; i++) {
+    total += numbers[i];
+  }
+  total /= numbers.length;
+
+  return total;
+}
+
+console.log(averageOfArray([2, 4, 6])); // Expected: 4
