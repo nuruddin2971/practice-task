@@ -264,7 +264,7 @@
 //   let result = [];
 //   // TODO: loop and push only even numbers
 //   for (let i = 0; i < numbers.length; i++) {
-//     if (numbers[i] % 2 === 0) {
+//     if (0 % 2 === 0) {
 //       result.push(numbers[i]);
 //     }
 //   }
@@ -312,3 +312,101 @@
 // let person = { name: "Sam", age: 25 };
 // console.log(getValueOrDefault(person, "age", 0)); // Expected: 25
 // console.log(getValueOrDefault(person, "grade", "N/A")); // Expected: "N/A"
+
+// Task-9
+
+// Input: an array of words, a length threshold
+// Output: array of words longer than the threshold
+// Returns: an array
+
+// function getWordsLongerThan(words, minLength) {
+//   let longWords = [];
+//   // TODO: loop, check condition, push the word
+//   for (let i = 0; i < words.length; i++) {
+//     if()
+//   }
+
+//   return longWords;
+// }
+
+// // Input: an array
+// // Output: the number of elements in the array
+// // Returns: a number
+
+// function countArray(arr) {
+//   let count = 0;
+//   // TODO: write your loop here
+
+//   return count;
+// }
+
+// let words = ["cat", "elephant", "dog", "hippopotamus", "ox"];
+// let longWords = getWordsLongerThan(words, 3);
+// let total = countArray(longWords);
+
+// console.log(longWords); // Expected: ["elephant", "hippopotamus"]
+// console.log(total); // Expected: 2
+
+// Task-10-A
+
+// Input: a number
+// Output: true or false
+// Returns: a boolean
+
+// function isPerfectSquare(num) {
+//   // TODO: write your logic here
+//   if (Number.isInteger(Math.sqrt(num))) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(isPerfectSquare(16)); // Expected: true
+// console.log(isPerfectSquare(20)); // Expected: false
+
+// Task-10-B
+
+// // Input: a sentence (string)
+// // Output: sentence with word order reversed
+// // Returns: a string
+
+// function reverseWords(sentence) {
+//   // TODO: split into words, reverse the order, and join back together
+//   const reversedSentence = sentence.split(" ").reverse().join(" ");
+//   // console.log(reversedSentence)
+//   return reversedSentence;
+// }
+
+// console.log(reverseWords("hello world")); // Expected: "world hello"
+
+// শুরু
+
+// largest = -∞
+// secondLargest = -∞
+
+// n ইনপুট নাও
+
+// n বার করো
+
+//     সংখ্যা ইনপুট নাও
+
+//     যদি সংখ্যা > largest হয় তাহলে
+//         secondLargest = largest
+//         largest = সংখ্যা
+
+//     নাহলে যদি
+//         সংখ্যা > secondLargest
+//         এবং সংখ্যা ≠ largest
+
+//         তাহলে
+//             secondLargest = সংখ্যা
+
+// শেষ পর্যন্ত
+
+// যদি secondLargest = -∞
+//     তাহলে "Second Largest নেই"
+// নাহলে
+//     secondLargest প্রিন্ট করো
+
+// শেষ
