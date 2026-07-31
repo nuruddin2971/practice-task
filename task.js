@@ -380,33 +380,43 @@
 
 // console.log(reverseWords("hello world")); // Expected: "world hello"
 
-// শুরু
+// Task-10-C
 
-// largest = -∞
-// secondLargest = -∞
+// // Input: an array of numbers
+// // Output: array with duplicates removed
+// // Returns: an array
 
-// n ইনপুট নাও
+// function removeDuplicates(numbers) {
+//   let unique = [];
+//   // TODO: write your logic here
+//   for (let i = 0; i < numbers.length; i++) {
+//     if(!unique.includes(numbers[i])){
+//         unique.push(numbers[i])
+//     }
+//   }
+//   return unique;
+// }
 
-// n বার করো
+// console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Expected: [1, 2, 3, 4, 5]
 
-//     সংখ্যা ইনপুট নাও
+// Task-10-D
 
-//     যদি সংখ্যা > largest হয় তাহলে
-//         secondLargest = largest
-//         largest = সংখ্যা
+// // Input: an object (values are unique)
+// // Output: a new object with keys and values swapped
+// // Returns: an object
 
-//     নাহলে যদি
-//         সংখ্যা > secondLargest
-//         এবং সংখ্যা ≠ largest
+// function invertObject(obj) {
+//   let inverted = {};
+//   // TODO: loop through obj and swap each key/value pair into inverted
+//   for (let key in obj) {
+//     if (obj.hasOwnProperty(key)) {
+//       let value = obj[key];
 
-//         তাহলে
-//             secondLargest = সংখ্যা
+//       inverted[value] = key;
+//     }
+//   }
+//   return inverted;
+// }
 
-// শেষ পর্যন্ত
-
-// যদি secondLargest = -∞
-//     তাহলে "Second Largest নেই"
-// নাহলে
-//     secondLargest প্রিন্ট করো
-
-// শেষ
+// console.log(invertObject({ a: 1, b: 2, c: 3 }));
+// // Expected: { 1: "a", 2: "b", 3: "c" }
